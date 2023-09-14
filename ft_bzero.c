@@ -6,13 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:48:32 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/14 18:09:45 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/09/14 18:42:42 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -26,16 +24,4 @@ void	ft_bzero(void *s, size_t n)
 		pos[i] = '\0';
 		i++;
 	}
-}
-
-int	main()
-{
-	char	str[] = "this is a char array";
-
-	printf("string before > %s\n", str);
-
-	ft_bzero(&str[6], 4 * sizeof(char));
-
-	printf("string after > %s\n", str);
-	return 0;
 }
