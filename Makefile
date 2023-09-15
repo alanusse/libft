@@ -3,9 +3,14 @@ NAME = libft.a
 CC = gcc
 CCFLAGS = -Wall -Wextra -Werror
 
-# Directorios
-SRC_DIR    = ./srcs/
-OBJ_DIR    = ./obj/
+RM = rm -rf
+LIB = ar -rcs
+
+SRC = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c \
+		ft_strlen.c ft_tolower.c ft_toupper.c
+OBJ = $(SRC:.c=.o)
+
+INCLUDE = libft.h
 
 all: $(NAME)
 
@@ -13,10 +18,9 @@ $(NAME): $(OBJ) $(INCLUDE)
 	$(LIB) $(NAME) $(OBJ)
 
 clean:
-	@rm -rf $(OBJ_DIR)
+	$(RM) $(OBJ)
 
 fclean: clean
-	@rm -rf $(NAME)
-	@echo "(╯°□°）╯︵ ┻━┻ $(NAME) removido!"
+	$(RM) $(NAME)
 
 re: fclean all
