@@ -1,18 +1,22 @@
 NAME = libft.a
-FLAGS = -Wall -Wextra -Werror
+
+CC = gcc
+CCFLAGS = -Wall -Wextra -Werror
 
 # Directorios
 SRC_DIR    = ./srcs/
 OBJ_DIR    = ./obj/
 
-all: obj $(NAME)
+all: $(NAME)
+
+$(NAME): $(OBJ) $(INCLUDE)
+	$(LIB) $(NAME) $(OBJ)
 
 clean:
-   @rm -Rf $(OBJ_DIR)
-   @echo "¯\_(ツ)_/¯ Objectos removidos!"
+	@rm -rf $(OBJ_DIR)
 
 fclean: clean
-   @rm -f $(NAME)
-   @echo "(╯°□°）╯︵ ┻━┻ $(NAME) removido!"
+	@rm -rf $(NAME)
+	@echo "(╯°□°）╯︵ ┻━┻ $(NAME) removido!"
 
 re: fclean all
