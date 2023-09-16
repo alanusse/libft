@@ -1,18 +1,18 @@
 #include <stdlib.h>
+#include "libft.h"
 
 char  *ft_strchr(const char *s, int c)
 {
-  char  *ptr;
+  int i;
+  int len;
 
-  ptr = (char *)s;
-  while(*ptr != '\0')
+  i = 0;
+  len = ft_strlen(s);
+  while (i <= len)
   {
-    if (*ptr == c)
-      return (ptr);
-    ptr++;
+    if (s[i] == (char)c)
+      return &s[i];
+    i++;
   }
-  if (*ptr == '\0' && c == '\0')
-    return (ptr);
-  else
-    return NULL;
+  return (NULL);
 }
