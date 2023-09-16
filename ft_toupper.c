@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
+/*   By: agustinlanusse <agustinlanusse@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 18:46:34 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/14 19:06:45 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/09/16 02:01:59 by agustinlanu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_toupper(int c)
 {
