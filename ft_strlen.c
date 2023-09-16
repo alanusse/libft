@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
+/*   By: agustinlanusse <agustinlanusse@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 13:03:45 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/13 13:35:18 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/09/16 12:22:47 by agustinlanu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
