@@ -1,7 +1,3 @@
-// #include <stdlib.h>
-// #include <stdio.h>
-// #include <string.h>
-// #include <ctype.h>
 #include "libft.h"
 
 int ft_atoi(const char *str)
@@ -29,12 +25,3 @@ int ft_atoi(const char *str)
   }
   return (total * sign);
 }
-
-// int main()
-// {
-//   char *str = "  \n      -54+23  4   ";
-
-//   printf("atoi -> %i\n", atoi(str));
-//   printf("ft_atoi -> %i\n", ft_atoi(str));
-//   return 1;
-// }
