@@ -4,24 +4,22 @@ int ft_atoi(const char *str)
 {
   int total;
   int sign;
-  int i;
 
   total = 0;
   sign = 1;
-  i = 0;
-  while(str[i] == '\t' || str[i] == '\n' || str[i] == '\v' || str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
-    i++;
-  while(str[i] == '+' || str[i] == '-')
+  while(*str == '\t' || *str == '\n' || *str == '\v' || *str == '\f' || *str == '\r' || *str == ' ')
+    str++;
+  while(*str == '+' || *str == '-')
   {
-    if (str[i] == '-')
+    if (*str == '-')
       sign = -1;
-    i++;
+    str++;
     break;
   }
-  while(ft_isdigit(str[i]))
+  while(ft_isdigit(*str))
   {
-    total = (total * 10) + (str[i] - '0');
-    i++;
+    total = (total * 10) + (*str - '0');
+    str++;
   }
   return (total * sign);
 }
