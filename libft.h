@@ -6,7 +6,7 @@
 /*   By: agustinlanusse <agustinlanusse@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 10:44:20 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/16 02:26:02 by agustinlanu      ###   ########.fr       */
+/*   Updated: 2023/09/16 17:55:43 by agustinlanu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int			ft_isascii(int c);
 int			ft_isprint(int c);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
+int     ft_atoi(const char *str);
 char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
 size_t		ft_strlen(const char *s);
