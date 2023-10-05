@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 10:44:20 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/04 15:36:41 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/05 20:16:13 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,13 @@ void		ft_bzero(void *s, size_t n);
 void		*ft_calloc(size_t count, size_t size);
 char		*ft_strdup(const char *s1);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
-char    *ft_strjoin(char const *s1, char const *s2);
-char    *ft_strtrim(char const *s1, char const *set);
-char    *ft_itoa(int n);
-char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void    ft_striteri(char *s, void (*f)(unsigned int, char*));
-void    ft_putchar_fd(char c, int fd);
-void    ft_putstr_fd(char *s, int fd);
-void    ft_putendl_fd(char *s, int fd);
+char		*ft_strjoin(char const *s1, char const *s2);
+char		*ft_strtrim(char const *s1, char const *set);
+char		*ft_itoa(int n);
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+void		ft_putchar_fd(char c, int fd);
+void		ft_putstr_fd(char *s, int fd);
+void		ft_putendl_fd(char *s, int fd);
 
 #endif

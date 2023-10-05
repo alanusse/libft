@@ -6,15 +6,15 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:13:37 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/04 15:28:47 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/05 20:09:37 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-  write(fd, &c, 1);  
+	write(fd, &c, 1);
 }
 
 // int main()

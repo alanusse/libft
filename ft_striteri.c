@@ -6,25 +6,25 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 14:55:43 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/04 15:11:59 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/05 20:11:55 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 #include "libft.h"
 
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-  int          size;
-  unsigned int i;
+	int				size;
+	unsigned int	i;
 
-  size = ft_strlen(s);
-  i = 0;
-  while (i < size)
-  {
-    f(i, &s[i]);
-    i++;
-  }
+	size = ft_strlen(s);
+	i = 0;
+	while (i < size)
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 
 // void to_zero(unsigned int i, char *ptr)
