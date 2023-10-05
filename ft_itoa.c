@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:52:55 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/05 20:09:10 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/05 22:53:15 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,35 +31,28 @@ int	count_digits(int n)
 	return (count);
 }
 
-char	int_to_char(int n)
-{
-	if (n < 0 || n > 9)
-		return (NULL);
-	return ('0' + n);
-}
-
 char	*ft_itoa(int n)
 {
 	char	*ptr;
-	int		size;
 	int		i;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	size = count_digits(n);
-	ptr = (char *)malloc((size + 1) * sizeof(char));
+	if (n == 0)
+		return (ft_strdup("0"));
+	ptr = (char *)malloc((count_digits(n) + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
-	ptr[size] = '\0';
+	ptr[count_digits(n)] = '\0';
+	i = count_digits(n) - 1;
 	if (n < 0)
 	{
 		ptr[0] = '-';
 		n *= -1;
 	}
-	i = size - 1;
-	while (i >= 0 && ptr[i] != '-')
+	while (n > 0)
 	{
-		ptr[i] = int_to_char(n % 10);
+		ptr[i] = '0' + (n % 10);
 		n /= 10;
 		i--;
 	}
@@ -75,6 +68,6 @@ char	*ft_itoa(int n)
 //   printf("test5: %s\n", ft_itoa(2147483647)); // output: 2147483647
 //   printf("test6: %s\n", ft_itoa(2147483648)); // output: 2147483648
 //   printf("test7: %s\n", ft_itoa(-2147483648LL)); // output: -2147483648
-//   printf("test8: %s\n", ft_itoa(-2147483649)); // output: 2147483647
+//   printf("test8: %s\n", ft_itoa(-2147483648)); // output: 2147483648
 //   return 1;
 // }
