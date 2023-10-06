@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 14:55:43 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/05 20:11:55 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/06 13:49:44 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-// void to_zero(unsigned int i, char *ptr)
+// void print_char(unsigned int i, char *ptr)
 // {
 //   printf("%c\n", *ptr);
 // }
@@ -35,6 +35,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 // int main()
 // {
 //   char *str = "hola que tal!";
-//   ft_striteri(str, to_zero);
+//   ft_striteri(str, print_char);
 //   return 1;
 // }
