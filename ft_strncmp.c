@@ -6,11 +6,12 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:43:49 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/20 12:44:13 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/15 17:41:07 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,11 +6,12 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:48:32 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/14 18:56:58 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/15 17:39:46 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

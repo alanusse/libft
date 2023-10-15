@@ -6,11 +6,12 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 18:11:16 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/20 13:01:43 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/15 17:40:23 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
