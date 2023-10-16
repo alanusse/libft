@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 10:06:10 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/16 19:20:28 by aglanuss         ###   ########.fr       */
+/*   Created: 2023/10/16 19:21:27 by aglanuss          #+#    #+#             */
+/*   Updated: 2023/10/16 20:55:27 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
 #include "libft.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-  new->next = *lst;
-  *lst = new;
+  if (!del)
+    return ;
+  if (lst)
+  {
+    del(lst->content);
+    free(lst);
+  }
 }
 
 // void print_list(t_list *head) {
@@ -26,6 +31,11 @@ void ft_lstadd_front(t_list **lst, t_list *new)
 //         printf("%s\n", (char *)current->content);
 //         current = current->next;
 //     }
+// }
+
+// void  print_deleted_content(void *content)
+// {
+//   printf("\ndeleted content: %s\n\n", (char *)content);
 // }
 
 // int main()
@@ -42,11 +52,14 @@ void ft_lstadd_front(t_list **lst, t_list *new)
 //   head->next = nxt;
 
 //   nxt->content = "second";
-//   nxt->next = NULL;
+//   nxt->next = new;
 
 //   new->content = "third";
 
-//   ft_lstadd_front(&head, new);
+//   print_list(head);
+
+//   ft_lstdelone(nxt, print_deleted_content);
+
 //   print_list(head);
 //   return 1;
 // }

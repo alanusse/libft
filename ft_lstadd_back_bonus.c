@@ -6,11 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:04:08 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/16 19:18:38 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/16 19:20:23 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 #include "libft.h"
 
 void ft_lstadd_back(t_list **lst, t_list *new)
