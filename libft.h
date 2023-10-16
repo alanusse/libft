@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 10:44:20 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/16 13:32:04 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/16 16:15:43 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@ typedef struct	s_list
 	struct s_list	*next;
 } 							t_list;
 
-t_list *ft_lstnew(void *content);
+t_list	*ft_lstnew(void *content);
+t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+
 int ft_lstsize(t_list *lst);
-t_list *ft_lstlast(t_list *lst);
 int ft_isalpha(int c);
 int ft_isdigit(int c);
 int ft_isalnum(int c);
