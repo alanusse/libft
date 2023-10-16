@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 19:21:27 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/16 21:44:18 by aglanuss         ###   ########.fr       */
+/*   Created: 2023/10/16 20:58:12 by aglanuss          #+#    #+#             */
+/*   Updated: 2023/10/16 23:52:37 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
-void ft_lstdelone(t_list *lst, void (*del)(void*))
+void ft_lstclear(t_list **lst, void (*del)(void*))
 {
-  if (!del)
+  t_list  *tmp;
+
+  if (!del || !*del)
     return ;
-  if (lst)
+  while (*lst && lst)
   {
-    del(lst->content);
-    free(lst);
+    tmp = (*lst)->next;
+    ft_lstdelone(*lst, del);
+    *lst = tmp;
   }
 }
 
@@ -42,25 +44,35 @@ void ft_lstdelone(t_list *lst, void (*del)(void*))
 // int main()
 // {
 //   t_list *head;
-//   t_list *nxt;
-//   t_list *new;
+//   t_list *first;
+//   t_list *second;
+//   t_list *third;
+//   t_list *fourth;
 
 //   head = (t_list *)malloc(sizeof(t_list));
-//   nxt = (t_list *)malloc(sizeof(t_list));
-//   new = (t_list *)malloc(sizeof(t_list));
+//   first = (t_list *)malloc(sizeof(t_list));
+//   second = (t_list *)malloc(sizeof(t_list));
+//   third = (t_list *)malloc(sizeof(t_list));
+//   fourth = (t_list *)malloc(sizeof(t_list));
 
-//   head->content = "first";
-//   head->next = nxt;
+//   head->content = "head";
+//   head->next = first;
 
-//   nxt->content = "second";
-//   nxt->next = new;
+//   first->content = "first";
+//   first->next = second;
 
-//   new->content = "third";
+//   second->content = "second";
+//   second->next = third;
 
-//   print_list(head);
+//   third->content = "third";
+//   third->next = fourth;
 
-//   ft_lstdelone(nxt, print_deleted_content);
+//   fourth->content = "fourth";
 
-//   print_list(head);
+//   // print_list(head);
+
+//   ft_lstclear(&second, print_deleted_content);
+
+//   // print_list(head);
 //   return 1;
 // }
