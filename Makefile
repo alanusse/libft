@@ -6,7 +6,7 @@
 #    By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 13:21:20 by aglanuss          #+#    #+#              #
-#    Updated: 2023/10/17 00:30:24 by aglanuss         ###   ########.fr        #
+#    Updated: 2023/10/17 21:18:21 by aglanuss         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,15 +36,27 @@ all: $(NAME)
 
 $(NAME): $(OBJ) $(INCLUDE)
 	$(LIB) $(NAME) $(OBJ)
+	@echo
+	@echo "\033[0;32m>>> Mandatory part successfully compiled! 🙌 <<<\033[0m"
+	@echo
 
 bonus: $(OBJBONUS) $(INCLUDE)
 	$(LIB) $(NAME) $(OBJBONUS)
+	@echo
+	@echo "\033[0;32m>>> Bonus part successfully compiled! 🙌 <<<\033[0m"
+	@echo
 
 clean:
 	$(RM) $(OBJ) $(OBJBONUS)
+	@echo
+	@echo "\033[0;32m>>> All '.o' files was removed <<<\033[0m"
+	@echo
 
 fclean: clean
-	$(RM) $(NAME) $(OBJBONUS)
+	$(RM) $(NAME)
+	@echo
+	@echo "\033[0;32m>>> libft.a was removed <<<\033[0m"
+	@echo
 
 re: fclean all
 
