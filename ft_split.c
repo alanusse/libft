@@ -6,12 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 22:54:53 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/15 16:49:07 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:56:48 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	get_total_words(char *s, char c)

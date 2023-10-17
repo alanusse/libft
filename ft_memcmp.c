@@ -6,11 +6,10 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:49:12 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/20 12:50:10 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:37:32 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

@@ -6,11 +6,10 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:31:20 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/15 17:40:42 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:56:43 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)

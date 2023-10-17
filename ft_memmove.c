@@ -6,18 +6,17 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:46:11 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/20 12:47:24 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 22:02:35 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*d;
-	char	*s;
-	int		i;
+	char		*d;
+	char		*s;
+	size_t		i;
 
 	if (dst == NULL && src == NULL)
 		return (NULL);

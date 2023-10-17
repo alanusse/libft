@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 14:55:43 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/06 13:49:44 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 22:01:44 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int				size;
-	unsigned int	i;
+	size_t	size;
+	size_t	i;
 
 	size = ft_strlen(s);
 	i = 0;

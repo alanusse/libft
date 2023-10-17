@@ -6,12 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 16:21:12 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/05 20:18:42 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:57:31 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

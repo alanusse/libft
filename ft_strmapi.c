@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 14:20:09 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/05 20:13:31 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:54:17 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char			*ptr;
-	int				size;
-	unsigned int	i;
+	char	*ptr;
+	size_t	size;
+	size_t	i;
 
 	size = ft_strlen(s);
 	ptr = (char *)malloc((size + 1) * sizeof(char));

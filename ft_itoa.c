@@ -6,12 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:52:55 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/05 22:53:15 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:55:06 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
 #include "libft.h"
 
 int	count_digits(int n)

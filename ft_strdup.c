@@ -6,13 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 13:57:32 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/27 14:25:34 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:57:23 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <errno.h>
+// #include <stdio.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

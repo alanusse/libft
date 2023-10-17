@@ -6,12 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 17:14:09 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/05 20:19:25 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:58:05 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	is_char_in_set(int c, char const *set)

@@ -6,13 +6,12 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:55:16 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/09/27 12:57:53 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 21:57:40 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 // #include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
