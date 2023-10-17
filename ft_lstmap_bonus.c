@@ -6,11 +6,11 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 00:31:14 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/17 20:08:00 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 20:42:45 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "libft.h"
 
@@ -18,16 +18,19 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*newlst;
 	t_list	*newnode;
+	void	*func;
 
 	if (!lst || !f || !del)
 		return (NULL);
 	newlst = NULL;
 	while (lst)
 	{
-		newnode = ft_lstnew(f(lst->content));
+		func = f(lst->content);
+		newnode = ft_lstnew(func);
 		if (!newnode)
 		{
 			ft_lstclear(&newlst, del);
+			free(func);
 			return (NULL);
 		}
 		if (!newlst)
