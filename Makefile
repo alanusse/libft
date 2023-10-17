@@ -6,7 +6,7 @@
 #    By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 13:21:20 by aglanuss          #+#    #+#              #
-#    Updated: 2023/10/17 21:59:52 by aglanuss         ###   ########.fr        #
+#    Updated: 2023/10/17 22:15:59 by aglanuss         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,15 +39,18 @@ $(NAME): $(OBJ) $(INCLUDE)
 
 %.o: %.c Makefile libft.h
 	$(CC) $(CCFLAGS) -c $< -o $@
+	@touch $@
 
-bonus: $(OBJBONUS) $(INCLUDE)
-	$(LIB) $(NAME) $(OBJBONUS)
+bonus: ${OBJS} ${OBJBONUS} $(INCLUDE)
+				@ar -rsc $(NAME) $^
+				@touch $@
 
 clean:
 	$(RM) $(OBJ) $(OBJBONUS)
 
 fclean: clean
 	$(RM) $(NAME)
+	@${RM} bonus
 
 re: fclean all
 
