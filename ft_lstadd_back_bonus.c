@@ -6,26 +6,26 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:04:08 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/16 19:20:23 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 20:05:35 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-  t_list  *current;
+	t_list	*current;
 
-  if (*lst)
-  {
-    current = *lst;
-    while (current->next)
-      current = current->next;
-    current->next = new;
-  }
-  else
-    *lst = new;
+	if (*lst)
+	{
+		current = *lst;
+		while (current->next)
+			current = current->next;
+		current->next = new;
+	}
+	else
+		*lst = new;
 }
 
 // void print_list(t_list *head) {

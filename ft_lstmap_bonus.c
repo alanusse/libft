@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 00:31:14 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/17 18:32:17 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 20:08:00 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,27 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-  t_list  *newlst;
-  t_list  *newnode;
+	t_list	*newlst;
+	t_list	*newnode;
 
-  if (!lst || !f || !del)
-    return (NULL);
-  newlst = NULL;
-  while (lst)
-  {
-    newnode = ft_lstnew(f(lst->content));
-    if (!newnode)
-    {
-      ft_lstclear(&newlst, del);
-      return (NULL);
-    }
-    if (!newlst)
-      newlst = newnode;
-    else
-      ft_lstadd_back(&newlst, newnode);
-    lst = lst->next;
-  }
-  return (newlst);
+	if (!lst || !f || !del)
+		return (NULL);
+	newlst = NULL;
+	while (lst)
+	{
+		newnode = ft_lstnew(f(lst->content));
+		if (!newnode)
+		{
+			ft_lstclear(&newlst, del);
+			return (NULL);
+		}
+		if (!newlst)
+			newlst = newnode;
+		else
+			ft_lstadd_back(&newlst, newnode);
+		lst = lst->next;
+	}
+	return (newlst);
 }
 
 // void print_list(t_list *head) {

@@ -6,7 +6,7 @@
 /*   By: aglanuss <aglanuss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 19:21:27 by aglanuss          #+#    #+#             */
-/*   Updated: 2023/10/16 21:44:18 by aglanuss         ###   ########.fr       */
+/*   Updated: 2023/10/17 20:06:57 by aglanuss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 #include <stdlib.h>
 #include "libft.h"
 
-void ft_lstdelone(t_list *lst, void (*del)(void*))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-  if (!del)
-    return ;
-  if (lst)
-  {
-    del(lst->content);
-    free(lst);
-  }
+	if (!del)
+		return ;
+	if (lst)
+	{
+		del(lst->content);
+		free(lst);
+	}
 }
 
 // void print_list(t_list *head) {
