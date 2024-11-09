@@ -18,7 +18,8 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 LIB = ar -rcs
 
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
+		ft_strlen.c ft_memset.c
 INCLUDES = libft.h
 
 OBJS = $(SRCS:.c=.o)
