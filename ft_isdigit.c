@@ -6,10 +6,15 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 18:12:07 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/09 18:13:39 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:19:37 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * Decimal-digit character test.
+ * 
+ * The ft_isdigit() function tests for a decimal digit character.
+ */
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
