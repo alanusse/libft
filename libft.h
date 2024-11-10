@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 17:44:46 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/09 22:51:54 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/10 01:45:02 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 #endif
