@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 19:05:03 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/11 16:08:30 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:10:46 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
  */
 void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char	*mem;
+	unsigned char	*ptr;
 
-	mem = (unsigned char *)b;
+	ptr = (unsigned char *)b;
 	while (len--)
-		*mem++ = c;
+		*ptr++ = c;
 	return (b);
 }

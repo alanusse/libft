@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 22:51:25 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/11 15:47:56 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/11 15:54:09 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * Write zeroes to a byte string.
- * 
+ *
  * The ft_bzero() function writes n zeroed bytes to the string s.
  * If n is zero, ft_bzero() does nothing.
  */
