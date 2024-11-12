@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 17:44:46 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/11 16:21:46 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:24:18 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 #endif
