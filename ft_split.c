@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 16:09:18 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/16 17:48:46 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/16 20:01:47 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ static char	*get_next_word(char **s, char c)
 
 static void	free_split(char **split, size_t size)
 {
-	while (size > 0)
+	while (size-- > 0)
 	{
 		free(split[size]);
 		split[size] = NULL;
