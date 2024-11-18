@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 12:16:01 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/14 01:37:54 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:10:44 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Locate a substring in a string.

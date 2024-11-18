@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 17:23:32 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/12 01:24:06 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:10:27 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Size-bounded string concatenation.

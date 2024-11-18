@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 01:32:27 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/14 16:12:25 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:09:24 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Memory allocation.

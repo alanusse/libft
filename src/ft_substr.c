@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 17:58:53 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/15 00:14:14 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:10:54 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Allocates (with malloc(3)) and returns a substring from the string ’s’.

@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 19:09:14 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/12 19:38:09 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:10:47 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Locate character in string.

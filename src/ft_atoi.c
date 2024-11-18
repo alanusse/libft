@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 01:14:16 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/14 01:29:14 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:09:14 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Convert ASCII string to integer.

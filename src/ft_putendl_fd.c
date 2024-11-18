@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/16 19:02:22 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/16 19:10:37 by agulanus         ###   ########.fr       */
+/*   Created: 2024/11/16 19:33:11 by agulanus          #+#    #+#             */
+/*   Updated: 2024/11/18 19:09:59 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
- * Applies the function ’f’ on each character of the string passed as argument,
- * passing its index as first argument.
- * Each character is passed by address to ’f’ to be modified if necessary.
+ * Outputs the string ’s’ to the given file descriptor followed by a newline.
  */
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
-
-	i = -1;
-	while (s[++i])
-		f(i, &s[i]);
+	if (s)
+	{
+		ft_putstr_fd(s, fd);
+		ft_putchar_fd('\n', fd);
+	}
 }

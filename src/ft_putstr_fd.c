@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 19:16:48 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/16 19:31:28 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:10:06 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Outputs the string ’s’ to the given file descriptor.

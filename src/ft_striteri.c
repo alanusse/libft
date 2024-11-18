@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/09 18:47:47 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/11 16:11:42 by agulanus         ###   ########.fr       */
+/*   Created: 2024/11/16 19:02:22 by agulanus          #+#    #+#             */
+/*   Updated: 2024/11/18 19:10:20 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
- * Find length of string.
- *
- * The ft_strlen() function computes the length of the string s.
- *
- * The ft_strlen() function returns the number of characters that precede
- * the terminating NUL character.
+ * Applies the function ’f’ on each character of the string passed as argument,
+ * passing its index as first argument.
+ * Each character is passed by address to ’f’ to be modified if necessary.
  */
-size_t	ft_strlen(const char *s)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	len;
+	size_t	i;
 
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
+	i = -1;
+	while (s[++i])
+		f(i, &s[i]);
 }

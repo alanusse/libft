@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 01:53:19 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/11 16:05:31 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:09:50 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Copy byte string.

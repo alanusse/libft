@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 18:23:48 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/11 15:54:39 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:09:27 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * Alphanumeric character test.
