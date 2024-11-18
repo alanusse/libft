@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 13:40:16 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 16:30:55 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:38:03 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (lst)
+	{
 		while (lst)
 		{
 			f(lst->content);
 			lst = lst->next;
 		}
+	}
 }
