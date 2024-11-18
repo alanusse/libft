@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:32:56 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 17:08:23 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 17:26:13 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
 
 /**
  * Iterates the list ’lst’ and applies the function ’f’ on the content

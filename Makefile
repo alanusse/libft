@@ -30,7 +30,9 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 BONUS_SRCS = ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
 	ft_lstadd_front_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
+
 INCLUDES = libft.h
+BONUS_INCLUDES = libft_bonus.h
 
 OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
@@ -51,11 +53,15 @@ $(NAME): $(OBJS) $(INCLUDES) Makefile
 
 bonus: $(BONUS)
 
-$(BONUS): $(NAME) $(BONUS_OBJS) Makefile
+$(BONUS): $(BONUS_OBJS) $(BONUS_INCLUDES) Makefile
 	@$(LIB) $(NAME) $(BONUS_OBJS)
 	@touch $(BONUS)
 	@printf "\n$(BLUE)[libft-bonus] $(WHITE)All bonus files was compiled $(GREEN)successfully$(RESET)\n"
 	@printf "$(BLUE)[libft-bonus] $(YELLOW)$(NAME) $(WHITE)file was created $(GREEN)successfully$(RESET)\n"
+
+%bonus.o: %bonus.c $(BONUS_INCLUDES) Makefile
+	@$(CC) -c $(CFLAGS) $< -o $@
+	@printf "$(GREEN)·$(RESET)"
 
 %.o: %.c $(INCLUDES) Makefile
 	@$(CC) -c $(CFLAGS) $< -o $@
