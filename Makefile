@@ -11,7 +11,6 @@
 # **************************************************************************** #
 
 NAME = libft.a
-BONUS = .bonus
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
@@ -27,13 +26,9 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 	ft_putnbr_fd.c
 
-BONUS_SRCS = ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
-	ft_lstadd_front_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
-	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 INCLUDES = libft.h
 
 OBJS = $(SRCS:.c=.o)
-BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 RED = $(shell printf "\33[31m")
 GREEN = $(shell printf "\33[32m")
@@ -49,27 +44,18 @@ $(NAME): $(OBJS) $(INCLUDES) Makefile
 	@printf "\n$(BLUE)[libft] $(WHITE)All files was compiled $(GREEN)successfully$(RESET)\n"
 	@printf "$(BLUE)[libft] $(YELLOW)$(NAME) $(WHITE)file was created $(GREEN)successfully$(RESET)\n"
 
-bonus: $(BONUS)
-
-$(BONUS): $(NAME) $(BONUS_OBJS) Makefile
-	@$(LIB) $(NAME) $(BONUS_OBJS)
-	@touch $(BONUS)
-	@printf "\n$(BLUE)[libft-bonus] $(WHITE)All bonus files was compiled $(GREEN)successfully$(RESET)\n"
-	@printf "$(BLUE)[libft-bonus] $(YELLOW)$(NAME) $(WHITE)file was created $(GREEN)successfully$(RESET)\n"
-
 %.o: %.c $(INCLUDES) Makefile
 	@$(CC) -c $(CFLAGS) $< -o $@
 	@printf "$(GREEN)·$(RESET)"
 
 clean:
-	@$(RM) $(OBJS) $(BONUS_OBJS)
+	@$(RM) $(OBJS)
 	@printf "$(BLUE)[libft] $(WHITE)All object files was $(RED)removed\n"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@$(RM) $(BONUS)
 	@printf "$(BLUE)[libft] $(WHITE)$(NAME) file was $(RED)removed\n"
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re
