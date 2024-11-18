@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:27:19 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 17:25:55 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 18:28:02 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Takes as a parameter a node and frees the memory of the node’s content using

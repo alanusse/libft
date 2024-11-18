@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 23:15:30 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 17:25:34 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 18:27:56 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Adds the node ’new’ at the beginning of the list.

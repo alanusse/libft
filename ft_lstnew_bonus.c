@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 18:07:54 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 17:26:19 by agulanus         ###   ########.fr       */
+/*   Updated: 2024/11/18 18:28:18 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Allocates (with malloc(3)) and returns a new node.
