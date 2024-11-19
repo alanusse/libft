@@ -76,7 +76,7 @@ Additional utility functions not included in the standard libc:
 - `ft_strmapi` and `ft_striteri`: Applies a function to each character of a string.
 - Output functions: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
 
-### Usage
+## Usage
 
 You can include this library in your C projects:
 
