@@ -21,16 +21,17 @@
 ## Requirements
 
 - **gcc** compiler.
-- Unix-based operating system (Linux or macOS).
-- Make (for executing the Makefile).
+- **Unix-based** operating system (Linux or macOS).
+- **Make** (for executing the Makefile).
 
 ## Project Structure
-
+```
 📦 libft/
 ├── libft.h
 ├── Makefile
 └── src/
 	└── ft_*.c
+```
 
 - **libft.h**: Header file containing all function declarations.
 - **Makefile**: File to compile the library and manage compilation rules.
