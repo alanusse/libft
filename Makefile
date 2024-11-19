@@ -19,6 +19,7 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 LIB = ar -rcs
 
+SRCS_DIR = src/
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c \
 	ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c \
@@ -27,6 +28,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 	ft_putnbr_fd.c
 
+BONUS_DIR = bonus/
 BONUS_SRCS = ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
 	ft_lstadd_front_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
@@ -45,15 +47,15 @@ BLUE = $(shell printf "\33[34m")
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(INCLUDES) Makefile
-	@$(LIB) $(NAME) $(OBJS)
+$(NAME): $(addprefix $(SRCS_DIR), $(OBJS)) $(INCLUDES) Makefile
+	@$(LIB) $(NAME) $(addprefix $(SRCS_DIR), $(OBJS))
 	@printf "\n$(BLUE)[libft] $(WHITE)All files was compiled $(GREEN)successfully$(RESET)\n"
 	@printf "$(BLUE)[libft] $(YELLOW)$(NAME) $(WHITE)file was created $(GREEN)successfully$(RESET)\n"
 
 bonus: $(BONUS)
 
-$(BONUS): $(BONUS_OBJS) $(INCLUDES) Makefile
-	@$(LIB) $(NAME) $(BONUS_OBJS)
+$(BONUS): $(addprefix $(BONUS_DIR), $(BONUS_OBJS)) $(INCLUDES) Makefile
+	@$(LIB) $(NAME) $(addprefix $(BONUS_DIR), $(BONUS_OBJS))
 	@touch $(BONUS)
 	@printf "\n$(BLUE)[libft-bonus] $(WHITE)All bonus files was compiled $(GREEN)successfully$(RESET)\n"
 	@printf "$(BLUE)[libft-bonus] $(YELLOW)$(NAME) $(WHITE)file was created $(GREEN)successfully$(RESET)\n"
@@ -63,7 +65,7 @@ $(BONUS): $(BONUS_OBJS) $(INCLUDES) Makefile
 	@printf "$(GREEN)·$(RESET)"
 
 clean:
-	@$(RM) $(OBJS) $(BONUS_OBJS)
+	@$(RM) $(addprefix $(SRCS_DIR), $(OBJS)) $(addprefix $(BONUS_DIR), $(BONUS_OBJS))
 	@printf "$(BLUE)[libft] $(WHITE)All object files was $(RED)removed\n"
 
 fclean: clean
