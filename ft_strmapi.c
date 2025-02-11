@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 18:54:24 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:10:37 by agulanus         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /**
  * Applies the function f to each character of the string s, passing its index

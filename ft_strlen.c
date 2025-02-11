@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/09 19:05:03 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:09:53 by agulanus         ###   ########.fr       */
+/*   Created: 2024/11/09 18:47:47 by agulanus          #+#    #+#             */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /**
- * Fill a byte string with a byte value.
+ * Find length of string.
  *
- * The ft_memset() function writes len bytes of value c 
- * (converted to an unsigned char) to the string b.
+ * The ft_strlen() function computes the length of the string s.
+ *
+ * The ft_strlen() function returns the number of characters that precede
+ * the terminating NUL character.
  */
-void	*ft_memset(void *b, int c, size_t len)
+size_t	ft_strlen(const char *s)
 {
-	unsigned char	*ptr;
+	size_t	len;
 
-	ptr = (unsigned char *)b;
-	while (len--)
-		*ptr++ = c;
-	return (b);
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }

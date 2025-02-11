@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 10:32:37 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:10:50 by agulanus         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /**
  * Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters

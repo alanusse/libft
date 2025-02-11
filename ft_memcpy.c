@@ -1,39 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 01:53:19 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:09:50 by agulanus         ###   ########.fr       */
+/*   Created: 2024/11/10 00:27:35 by agulanus          #+#    #+#             */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /**
- * Copy byte string.
+ * Copy memory area.
  *
- * The ft_memmove() function copies len bytes from string src to string dst.
- * The two strings may overlap; the copy is always done in a non-destructive
- * manner.
+ * The ft_memcpy() function copies n bytes from memory area src to
+ * memory area dst. If dst and src overlap, behavior is undefined.
  *
- * The ft_memmove() function returns the original value of dst.
+ * The ft_memcpy() function returns the original value of dst.
  */
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*d;
 	unsigned char	*s;
+	unsigned char	*d;
 
 	if (!dst && !src)
 		return (NULL);
-	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
-	if (d > s)
-		while (len--)
-			d[len] = s[len];
-	else
-		dst = ft_memcpy(dst, src, len);
+	d = (unsigned char *)dst;
+	while (n--)
+		*d++ = *s++;
 	return (dst);
 }

@@ -6,11 +6,11 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 16:09:18 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:10:10 by agulanus         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 static size_t	count_words(char const *s, char c);
 static char		*get_next_word(char **s, char c);

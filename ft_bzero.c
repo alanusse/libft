@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/16 19:37:35 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:10:03 by agulanus         ###   ########.fr       */
+/*   Created: 2024/11/09 22:51:25 by agulanus          #+#    #+#             */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /**
- * Outputs the integer ’n’ to the given file descriptor.
+ * Write zeroes to a byte string.
+ *
+ * The ft_bzero() function writes n zeroed bytes to the string s.
+ * If n is zero, ft_bzero() does nothing.
  */
-void	ft_putnbr_fd(int n, int fd)
+void	ft_bzero(void *s, size_t n)
 {
-	if (n == INT_MIN)
-		ft_putstr_fd("-2147483648", fd);
-	else if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		ft_putnbr_fd(n * -1, fd);
-	}
-	else if (n > 9)
-	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd('0' + (n % 10), fd);
-	}
-	else
-		ft_putchar_fd('0' + n, fd);
+	ft_memset(s, '\0', n);
 }

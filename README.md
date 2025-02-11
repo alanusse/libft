@@ -29,13 +29,12 @@
 📦 libft/
 ├── libft.h
 ├── Makefile
-└── src/
-	└── ft_*.c
+└── ft_*.c
 ```
 
 - **libft.h**: Header file containing all function declarations.
 - **Makefile**: File to compile the library and manage compilation rules.
-- **src/**: Source files for mandatory functions.
+- **ft_\***: Source files of mandatory functions.
 
 ## Compilation
 

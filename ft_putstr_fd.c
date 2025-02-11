@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/09 22:51:25 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:09:20 by agulanus         ###   ########.fr       */
+/*   Created: 2024/11/16 19:16:48 by agulanus          #+#    #+#             */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /**
- * Write zeroes to a byte string.
- *
- * The ft_bzero() function writes n zeroed bytes to the string s.
- * If n is zero, ft_bzero() does nothing.
+ * Outputs the string ’s’ to the given file descriptor.
  */
-void	ft_bzero(void *s, size_t n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	ft_memset(s, '\0', n);
+	if (s)
+		write(fd, s, ft_strlen(s));
 }

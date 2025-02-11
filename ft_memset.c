@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/16 19:16:48 by agulanus          #+#    #+#             */
-/*   Updated: 2024/11/18 19:10:06 by agulanus         ###   ########.fr       */
+/*   Created: 2024/11/09 19:05:03 by agulanus          #+#    #+#             */
+/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /**
- * Outputs the string ’s’ to the given file descriptor.
+ * Fill a byte string with a byte value.
+ *
+ * The ft_memset() function writes len bytes of value c 
+ * (converted to an unsigned char) to the string b.
  */
-void	ft_putstr_fd(char *s, int fd)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	if (s)
-		write(fd, s, ft_strlen(s));
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)b;
+	while (len--)
+		*ptr++ = c;
+	return (b);
 }
