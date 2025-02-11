@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 00:27:35 by agulanus          #+#    #+#             */
-/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
+/*   Updated: 2025/02/11 14:43:12 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*s;
 	unsigned char	*d;
 
-	if (!dst && !src)
-		return (NULL);
 	s = (unsigned char *)src;
 	d = (unsigned char *)dst;
 	while (n--)
