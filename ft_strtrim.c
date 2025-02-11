@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 10:32:37 by agulanus          #+#    #+#             */
-/*   Updated: 2025/02/11 12:40:16 by agulanus         ###   ########.fr       */
+/*   Updated: 2025/02/11 13:52:33 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*ptr;
-	char	lookup[UCHAR_MAX + 1];
+	char	lookup[256];
 	size_t	i;
 
 	ft_bzero(lookup, sizeof(lookup));
