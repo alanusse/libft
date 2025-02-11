@@ -50,11 +50,11 @@ $(NAME): $(OBJS) $(INCLUDES) Makefile
 
 clean:
 	@$(RM) $(OBJS)
-	@printf "$(BLUE)[libft] $(WHITE)All object files was $(RED)removed\n"
+	@printf "$(BLUE)[libft] $(WHITE)All object files was $(RED)removed$(RESET)\n"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@printf "$(BLUE)[libft] $(WHITE)$(NAME) file was $(RED)removed\n"
+	@printf "$(BLUE)[libft] $(WHITE)$(NAME) file was $(RED)removed$(RESET)\n"
 
 re: fclean all
 

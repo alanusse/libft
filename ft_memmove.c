@@ -6,7 +6,7 @@
 /*   By: agulanus <agulanus@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 01:53:19 by agulanus          #+#    #+#             */
-/*   Updated: 2025/02/11 14:43:20 by agulanus         ###   ########.fr       */
+/*   Updated: 2025/02/11 19:24:00 by agulanus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char	*d;
 	unsigned char	*s;
 
+	if (!dst && !src)
+		return (NULL);
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
 	if (d > s)
