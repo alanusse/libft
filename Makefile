@@ -18,7 +18,6 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 LIB = ar -rcs
 
-SRCS_DIR = src/
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c \
 	ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c \
@@ -40,8 +39,8 @@ BLUE = $(shell printf "\33[34m")
 
 all: $(NAME)
 
-$(NAME): $(addprefix $(SRCS_DIR), $(OBJS)) $(INCLUDES) Makefile
-	@$(LIB) $(NAME) $(addprefix $(SRCS_DIR), $(OBJS))
+$(NAME): $(OBJS) $(INCLUDES) Makefile
+	@$(LIB) $(NAME) $(OBJS)
 	@printf "\n$(BLUE)[libft] $(WHITE)All files was compiled $(GREEN)successfully$(RESET)\n"
 	@printf "$(BLUE)[libft] $(YELLOW)$(NAME) $(WHITE)file was created $(GREEN)successfully$(RESET)\n"
 
@@ -50,7 +49,7 @@ $(NAME): $(addprefix $(SRCS_DIR), $(OBJS)) $(INCLUDES) Makefile
 	@printf "$(GREEN)·$(RESET)"
 
 clean:
-	@$(RM) $(addprefix $(SRCS_DIR), $(OBJS))
+	@$(RM) $(OBJS)
 	@printf "$(BLUE)[libft] $(WHITE)All object files was $(RED)removed\n"
 
 fclean: clean
